@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".floortile">
+    tools:context=".walltile">
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center|center_horizontal"
-        android:text="Floor Tile"
+        android:text="Wall Tile"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp"
         android:textStyle="bold" />
@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="69dp"
         android:gravity="center|center_horizontal"
-        android:text="Enter The Floor Size"
+        android:text="Enter The Wall Size"
         android:textColor="@android:color/background_dark"
         android:textSize="24sp" />
 
@@ -35,10 +35,10 @@
             android:id="@+id/textView6"
             android:layout_width="160dp"
             android:layout_height="match_parent"
-            android:text="LENGTH"
             android:gravity="center|center_horizontal"
+            android:text="HEIGHT"
             android:textColor="@android:color/background_dark"
-            android:textSize="24sp"/>
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/length_txt"
