@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class walltile extends AppCompatActivity {
 
@@ -19,6 +20,7 @@ public class walltile extends AppCompatActivity {
     TextView tile_txt1;
     TextView tile_txt2;
     TextView declare;
+    int ori_val;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,15 +65,54 @@ public class walltile extends AppCompatActivity {
                 TextView area_txt = (TextView) findViewById(R.id.area);
                 TextView tile_txt = (TextView) findViewById(R.id.tile);
                 TextView appx_tile = (TextView) findViewById(R.id.appx_tile);
-                int length = Integer.parseInt(length_txt.getText().toString());
-                int width = Integer.parseInt(width_txt.getText().toString());
+
                 String text =  spin1.getSelectedItem().toString();
                 String ori = spin2.getSelectedItem().toString();
 
+                if(ori.equals("LANDSCAPE"))
+                {
+                    ori_val=1;
+                }
+                else if(ori.equals("PORTRIAL"))
+                {
+                    ori_val =2;
+                }
 
-                int area = length * width;
 
-                area_txt.setText(area +"");
+
+
+
+                if (length_txt.getText().toString() == null || length_txt.getText().toString().equals("")) {
+                    Toast.makeText(walltile.this, "You did not enter a number", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                else if (width_txt.getText().toString() == null || width_txt.getText().toString().equals("")) {
+                    Toast.makeText(walltile.this, "You did not enter a number", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                else {
+
+
+                    int length = Integer.parseInt(length_txt.getText().toString());
+                    int width = Integer.parseInt(width_txt.getText().toString());
+
+                    int i = 0;
+                    char t = text.charAt(i);
+                    int total = wall_cal_tile.cal(t, width, length,ori_val);
+                    int area = length * width;
+
+                    tile_txt.setText(total + "");
+                    area_txt.setText(area + "");
+                    appx_tile.setText((total + 10) + "");
+
+
+                    area_txt1.setVisibility(TextView.VISIBLE);
+                    area_txt2.setVisibility(TextView.VISIBLE);
+                    tile_txt1.setVisibility(TextView.VISIBLE);
+                    area_txt2.setVisibility(TextView.VISIBLE);
+                    declare.setVisibility(TextView.VISIBLE);
+                }
             }
         });
     }
