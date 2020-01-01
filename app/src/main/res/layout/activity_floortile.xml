@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/floor1"
     tools:context=".floortile">
 
     <TextView
@@ -98,7 +99,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textView111"
             android:layout_width="160dp"
             android:layout_height="match_parent"
             android:text="TILE TYPE"
@@ -209,7 +210,7 @@
 
         <TextView
             android:id="@+id/declare"
-            android:layout_width="265dp"
+            android:layout_width="295dp"
             android:layout_height="63dp"
             android:text="With Damage And Cutting Tiles You Will Need "
             android:textColor="@android:color/background_dark"

@@ -16,10 +16,14 @@
         <item>3. 6  Inch x 18 Inch</item>
         <item>4. 9  Inch x 12 Inch</item>
         <item>5. 9  Inch x 18 Inch</item>
-        <item>12 Inch x 18 Inch</item>
-        <item>12 Inch x 24 Inch</item>
-        <item>18 Inch x 24 Inch</item>
+        <item>6. 12 Inch x 18 Inch</item>
+        <item>7. 12 Inch x 24 Inch</item>
+        <item>8. 18 Inch x 24 Inch</item>
 
 
+    </string-array>
+    <string-array name="orientation">
+        <item>LANDSCAPE</item>
+        <item>PORTRIAL</item>
     </string-array>
 </resources>
