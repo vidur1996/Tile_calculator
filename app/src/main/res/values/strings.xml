@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Tile calculator</string>
+
+    <string-array name="floor_size">
+        <item>1. 6  Inch x 6  Inch</item>
+        <item>2. 9  Inch x 9  Inch</item>
+        <item>3. 12 Inch x 12 Inch</item>
+        <item>4. 16 Inch x 16 Inch</item>
+        <item>5. 18 Inch x 18 Inch</item>
+        <item>6. 24 Inch x 24 Inch</item>
+    </string-array>
+
+    <string-array name="wall_size">
+        <item>1. 6  Inch x 9  Inch</item>
+        <item>2. 6  Inch x 12 Inch</item>
+        <item>3. 6  Inch x 18 Inch</item>
+        <item>4. 9  Inch x 12 Inch</item>
+        <item>5. 9  Inch x 18 Inch</item>
+        <item>12 Inch x 18 Inch</item>
+        <item>12 Inch x 24 Inch</item>
+        <item>18 Inch x 24 Inch</item>
+
+
+    </string-array>
 </resources>

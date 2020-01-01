@@ -92,19 +92,52 @@
             android:textSize="18sp" />
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:text="TILE TYPE"
+            android:gravity="center|center_horizontal"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"/>
+
+        <Spinner
+            android:id="@+id/spin1"
+            android:layout_width="222dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center|center_horizontal"
+            android:foregroundGravity="center|center_horizontal"
+            android:gravity="center|center_horizontal"
+            android:padding="5dip"
+            android:text="Total Area"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
     <Button
         android:id="@+id/cal_btn"
         android:layout_width="match_parent"
         android:layout_height="61dp"
         android:text="CALCULATE" />
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="47dp" />
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="58dp"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/tete1"
+            android:id="@+id/area_txt"
             android:layout_width="162dp"
             android:layout_height="50dp"
             android:gravity="center|center_horizontal"
@@ -122,7 +155,7 @@
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/area_txt2"
             android:layout_width="80dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -131,6 +164,65 @@
             android:textColor="@android:color/background_dark"
             android:textSize="12sp" />
 
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tile_txt"
+            android:layout_width="162dp"
+            android:layout_height="50dp"
+            android:gravity="center|center_horizontal"
+            android:text="no of tiles"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tile"
+            android:layout_width="132dp"
+            android:layout_height="50dp"
+            android:gravity="center|center_horizontal"
+            android:text=""
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tile_txt2"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center|center_horizontal"
+            android:text="tiles"
+            android:textColor="@android:color/background_dark"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/declare"
+            android:layout_width="265dp"
+            android:layout_height="63dp"
+            android:text="With Damage And Cutting Tiles You Will Need "
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/appx_tile"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </LinearLayout>
