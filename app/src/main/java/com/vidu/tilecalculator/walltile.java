@@ -76,6 +76,7 @@ public class walltile extends AppCompatActivity {
                 else if(ori.equals("PORTRIAL"))
                 {
                     ori_val =2;
+                    //
                 }
 
 
