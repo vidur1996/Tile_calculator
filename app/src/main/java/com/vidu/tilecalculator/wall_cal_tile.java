@@ -139,7 +139,7 @@ public class wall_cal_tile
 
         else
         {
-            total = 0;
+            total  = 0;
         }
 
 
