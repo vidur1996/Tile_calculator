@@ -22,6 +22,8 @@ public class walltile extends AppCompatActivity {
     TextView tile_txt1;
     TextView tile_txt2;
     TextView declare;
+    //TextView  sam1;
+    //TextView sam2;
     int ori_val;
 
     @Override
@@ -33,17 +35,18 @@ public class walltile extends AppCompatActivity {
 
 
 
-        Button cal_btn = (Button) findViewById(R.id.cal_btn);
+        final Button cal_btn = (Button) findViewById(R.id.cal_btn);
         spin1 = (Spinner) findViewById(R.id.spin1);
         spin2 = (Spinner) findViewById(R.id.spin2);
-        spin_3 = (Spinner) findViewById(R.id.spin3);
-        spin_4 = (Spinner) findViewById(R.id.spin4);
+        spin_3 = (Spinner) findViewById(R.id.spin4);
+        spin_4 = (Spinner) findViewById(R.id.spin3);
         area_txt1 = (TextView) findViewById(R.id.area_txt);
         area_txt2 = (TextView) findViewById(R.id.area_txt2);
         tile_txt1 = (TextView) findViewById(R.id.tile_txt);
         tile_txt2 = (TextView) findViewById(R.id.tile_txt2);
         declare = (TextView) findViewById(R.id.declare);
-
+            //sam1 = (TextView) findViewById(R.id.sample1) ;
+           // sam2 = (TextView) findViewById(R.id.sample2) ;
         area_txt1.setVisibility(TextView.INVISIBLE);
         area_txt2.setVisibility(TextView.INVISIBLE);
         tile_txt1.setVisibility(TextView.INVISIBLE);
@@ -83,6 +86,8 @@ public class walltile extends AppCompatActivity {
 
                 String text =  spin1.getSelectedItem().toString();
                 String ori = spin2.getSelectedItem().toString();
+                String h_measure  = spin_3.getSelectedItem().toString();
+                String w_measure  = spin_4.getSelectedItem().toString();
 
                 if(ori.equals("LANDSCAPE"))
                 {
@@ -91,7 +96,7 @@ public class walltile extends AppCompatActivity {
                 else if(ori.equals("PORTRIAL"))
                 {
                     ori_val =2;
-                    //
+
                 }
 
 
@@ -110,19 +115,23 @@ public class walltile extends AppCompatActivity {
                 else {
 
 
-                    int length = Integer.parseInt(length_txt.getText().toString());
-                    int width = Integer.parseInt(width_txt.getText().toString());
+                    double heigth = Integer.parseInt(length_txt.getText().toString());
+                    double width = Integer.parseInt(width_txt.getText().toString());
+
+                    width = convertion.convert_w(w_measure,width);
+                    heigth = convertion.convert_h(h_measure,heigth);
 
                     int i = 0;
                     char t = text.charAt(i);
-                    int total = wall_cal_tile.cal(t, width, length,ori_val);
-                    int area = length * width;
+                    double total = wall_cal_tile.cal(t, width, heigth,ori_val);
+                    double area = heigth * width;
 
-                    tile_txt.setText(total + "");
-                    area_txt.setText(area + "");
-                    appx_tile.setText((total + 10) + "");
+                    tile_txt.setText(Math.round(total) + "");
+                    area_txt.setText(Math.round(area) + "");
+                    appx_tile.setText((Math.round(total) + 10) + "");
 
-
+                  //  sam1.setText(w_measure);
+                  //  sam2.setText(h_measure);
                     area_txt1.setVisibility(TextView.VISIBLE);
                     area_txt2.setVisibility(TextView.VISIBLE);
                     tile_txt1.setVisibility(TextView.VISIBLE);
