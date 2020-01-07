@@ -54,7 +54,7 @@
         <Spinner
             android:id="@+id/spin4"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
+            android:layout_height="45dp"
             android:layout_gravity="center|center_horizontal"
             android:layout_weight="1"
             android:background="@color/colorPrimary"
@@ -91,7 +91,7 @@
         <Spinner
             android:id="@+id/spin3"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
+            android:layout_height="45dp"
             android:layout_gravity="center|center_horizontal"
             android:layout_weight="1"
             android:background="@color/colorPrimary"
