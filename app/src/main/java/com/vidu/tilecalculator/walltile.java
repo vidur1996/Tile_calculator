@@ -64,7 +64,6 @@ public class walltile extends AppCompatActivity {
         spin_3.setAdapter(myadapter3);
 
 
-
         cal_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
