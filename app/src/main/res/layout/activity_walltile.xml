@@ -51,21 +51,23 @@
             android:gravity="center|center_horizontal"
             android:inputType="number" />
 
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="80dp"
-            android:layout_height="match_parent"
+        <Spinner
+            android:id="@+id/spin4"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center|center_horizontal"
             android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:foregroundGravity="center|center_horizontal"
             android:gravity="center|center_horizontal"
-            android:text="Foot"
+            android:padding="5dip"
             android:textColor="@android:color/background_dark"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textSize="24sp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:orientation="horizontal">
 
         <TextView
@@ -86,16 +88,18 @@
             android:gravity="center|center_horizontal"
             android:inputType="number" />
 
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="80dp"
-            android:layout_height="match_parent"
+        <Spinner
+            android:id="@+id/spin3"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center|center_horizontal"
             android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:foregroundGravity="center|center_horizontal"
             android:gravity="center|center_horizontal"
-            android:text="Foot"
+            android:padding="5dip"
             android:textColor="@android:color/background_dark"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textSize="24sp" />
     </LinearLayout>
 
     <LinearLayout

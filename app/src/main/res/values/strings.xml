@@ -26,4 +26,15 @@
         <item>LANDSCAPE</item>
         <item>PORTRIAL</item>
     </string-array>
+
+    <string-array name="measurement">
+        <item>inch</item>
+        <item>feet</item>
+        <item>meter</item>
+        <item>c.meter</item>
+
+    </string-array>
+
+
+
 </resources>

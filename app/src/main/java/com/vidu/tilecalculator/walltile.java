@@ -15,6 +15,7 @@ public class walltile extends AppCompatActivity {
 
     Spinner spin1;
     Spinner spin2;
+    Spinner spin_3;
     TextView area_txt1;
     TextView area_txt2;
     TextView tile_txt1;
@@ -34,6 +35,7 @@ public class walltile extends AppCompatActivity {
         Button cal_btn = (Button) findViewById(R.id.cal_btn);
         spin1 = (Spinner) findViewById(R.id.spin1);
         spin2 = (Spinner) findViewById(R.id.spin2);
+        spin_3 = (Spinner) findViewById(R.id.spin3);
         area_txt1 = (TextView) findViewById(R.id.area_txt);
         area_txt2 = (TextView) findViewById(R.id.area_txt2);
         tile_txt1 = (TextView) findViewById(R.id.tile_txt);
@@ -55,6 +57,13 @@ public class walltile extends AppCompatActivity {
                 ,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.orientation));
         myadapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spin2.setAdapter(myadapter2);
+
+        ArrayAdapter<String> myadapter3 = new ArrayAdapter<String>(walltile.this
+                ,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.measurement));
+        myadapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spin_3.setAdapter(myadapter3);
+
+
 
         cal_btn.setOnClickListener(new View.OnClickListener() {
             @Override
