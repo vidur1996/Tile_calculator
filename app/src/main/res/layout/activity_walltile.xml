@@ -49,10 +49,10 @@
             android:layout_height="match_parent"
             android:ems="10"
             android:gravity="center|center_horizontal"
-            android:inputType="number" />
+            android:inputType="numberDecimal" />
 
         <Spinner
-            android:id="@+id/spin4"
+            android:id="@+id/spin3"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_gravity="center|center_horizontal"
@@ -86,10 +86,10 @@
             android:layout_height="match_parent"
             android:ems="10"
             android:gravity="center|center_horizontal"
-            android:inputType="number" />
+            android:inputType="numberDecimal" />
 
         <Spinner
-            android:id="@+id/spin3"
+            android:id="@+id/spin4"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_gravity="center|center_horizontal"
@@ -174,9 +174,10 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/sample2"
         android:layout_width="match_parent"
-        android:layout_height="47dp" />
+        android:layout_height="47dp"
+        android:textSize="30sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -255,7 +256,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="78dp"
         android:orientation="horizontal">
 
         <TextView
@@ -274,6 +275,17 @@
             android:textColor="@android:color/background_dark"
             android:textSize="24sp"
             android:textStyle="bold" />
+
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/sample1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
 
 </LinearLayout>

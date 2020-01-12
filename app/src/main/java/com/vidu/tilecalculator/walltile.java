@@ -22,8 +22,8 @@ public class walltile extends AppCompatActivity {
     TextView tile_txt1;
     TextView tile_txt2;
     TextView declare;
-    //TextView  sam1;
-    //TextView sam2;
+    TextView  sam1;
+    TextView sam2;
     int ori_val;
 
     @Override
@@ -45,8 +45,8 @@ public class walltile extends AppCompatActivity {
         tile_txt1 = (TextView) findViewById(R.id.tile_txt);
         tile_txt2 = (TextView) findViewById(R.id.tile_txt2);
         declare = (TextView) findViewById(R.id.declare);
-            //sam1 = (TextView) findViewById(R.id.sample1) ;
-           // sam2 = (TextView) findViewById(R.id.sample2) ;
+            sam1 = (TextView) findViewById(R.id.sample1) ;
+           sam2 = (TextView) findViewById(R.id.sample2) ;
         area_txt1.setVisibility(TextView.INVISIBLE);
         area_txt2.setVisibility(TextView.INVISIBLE);
         tile_txt1.setVisibility(TextView.INVISIBLE);
@@ -115,23 +115,34 @@ public class walltile extends AppCompatActivity {
                 else {
 
 
-                    double heigth = Integer.parseInt(length_txt.getText().toString());
-                    double width = Integer.parseInt(width_txt.getText().toString());
+                    double heigth = Double.parseDouble(length_txt.getText().toString());
+                    double width = Double.parseDouble(width_txt.getText().toString());
 
                     width = convertion.convert_w(w_measure,width);
                     heigth = convertion.convert_h(h_measure,heigth);
 
                     int i = 0;
                     char t = text.charAt(i);
-                    double total = wall_cal_tile.cal(t, width, heigth,ori_val);
-                    double area = heigth * width;
+                    double total = wall_cal_tile.cal(t, (int)width, (int)heigth,ori_val);
+                    double area = (heigth/12) * (width/12);
+                    area = area *100;
+                    area = Math.round(area);
+                    area = area/100;
 
                     tile_txt.setText(Math.round(total) + "");
-                    area_txt.setText(Math.round(area) + "");
-                    appx_tile.setText((Math.round(total) + 10) + "");
+                    area_txt.setText(area + "");
+                    if(wall_cal_tile.l_total > wall_cal_tile.w_total)
+                    {
+                        appx_tile.setText((Math.round(total) + wall_cal_tile.l_total ) + "");
+                    }
+                    else
+                    {
+                        appx_tile.setText((Math.round(total) + wall_cal_tile.w_total ) + "");
+                    }
 
-                  //  sam1.setText(w_measure);
-                  //  sam2.setText(h_measure);
+
+                    sam1.setText(wall_cal_tile.l_total +"");
+                    sam2.setText(wall_cal_tile.w_total +"");
                     area_txt1.setVisibility(TextView.VISIBLE);
                     area_txt2.setVisibility(TextView.VISIBLE);
                     tile_txt1.setVisibility(TextView.VISIBLE);
