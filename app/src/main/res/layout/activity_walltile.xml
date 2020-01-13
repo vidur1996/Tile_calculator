@@ -53,7 +53,7 @@
 
         <Spinner
             android:id="@+id/spin3"
-            android:layout_width="match_parent"
+            android:layout_width="85dp"
             android:layout_height="45dp"
             android:layout_gravity="center|center_horizontal"
             android:layout_weight="1"
@@ -61,7 +61,7 @@
             android:foregroundGravity="center|center_horizontal"
             android:gravity="center|center_horizontal"
             android:padding="5dip"
-            android:textColor="@android:color/background_dark"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="24sp" />
     </LinearLayout>
 
@@ -90,7 +90,7 @@
 
         <Spinner
             android:id="@+id/spin4"
-            android:layout_width="match_parent"
+            android:layout_width="50dp"
             android:layout_height="45dp"
             android:layout_gravity="center|center_horizontal"
             android:layout_weight="1"
@@ -98,7 +98,7 @@
             android:foregroundGravity="center|center_horizontal"
             android:gravity="center|center_horizontal"
             android:padding="5dip"
-            android:textColor="@android:color/background_dark"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="24sp" />
     </LinearLayout>
 
@@ -127,7 +127,7 @@
             android:gravity="center|center_horizontal"
             android:padding="5dip"
             android:text="Total Area"
-            android:textColor="@android:color/background_dark"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="24sp" />
 
     </LinearLayout>
@@ -157,7 +157,7 @@
             android:gravity="center|center_horizontal"
             android:padding="5dip"
             android:text="Total Area"
-            android:textColor="@android:color/background_dark"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="24sp" />
 
     </LinearLayout>
@@ -283,7 +283,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="TextView"
         android:textSize="24sp"
         android:textStyle="bold"
         android:typeface="sans" />

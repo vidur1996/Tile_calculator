@@ -141,8 +141,8 @@ public class walltile extends AppCompatActivity {
                     }
 
 
-                    sam1.setText(wall_cal_tile.l_total +"");
-                    sam2.setText(wall_cal_tile.w_total +"");
+                    //sam1.setText(wall_cal_tile.l_total +"");
+                   // sam2.setText(wall_cal_tile.w_total +"");
                     area_txt1.setVisibility(TextView.VISIBLE);
                     area_txt2.setVisibility(TextView.VISIBLE);
                     tile_txt1.setVisibility(TextView.VISIBLE);

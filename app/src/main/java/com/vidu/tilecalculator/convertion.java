@@ -12,12 +12,12 @@ public class convertion {
         }
         else if(h_measure.equals("meter"))
         {
-            c_height = height*3.28;
+            c_height = height*39.37;
         }
         else if(h_measure.equals("c.meter"))
         {
             c_height = height/100;
-            c_height = c_height*3.28;
+            c_height = c_height*39.37;
         }
         else if(h_measure.equals("feet"))
         {
@@ -36,12 +36,12 @@ public class convertion {
         }
         else if(w_measure.equals("meter"))
         {
-            c_width = width*3.28;
+            c_width = width*39.37;
         }
         else if(w_measure.equals("c.meter"))
         {
             c_width = width/100;
-            c_width = c_width*3.28;
+            c_width = c_width*39.37;
         }
         else if(w_measure.equals("feet"))
         {
