@@ -28,8 +28,8 @@
     </string-array>
 
     <string-array name="measurement">
-        <item>inch</item>
         <item>feet</item>
+        <item>inch</item>
         <item>meter</item>
         <item>c.meter</item>
 

@@ -164,8 +164,9 @@
 
     <Button
         android:id="@+id/cal_btn"
-        android:layout_width="match_parent"
+        android:layout_width="285dp"
         android:layout_height="61dp"
+        android:layout_gravity="center_horizontal"
         android:background="@color/colorPrimary"
         android:text="CALCULATE"
         android:textColor="@color/colorPrimaryDark"
