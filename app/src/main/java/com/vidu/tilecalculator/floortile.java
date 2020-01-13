@@ -1,6 +1,8 @@
 package com.vidu.tilecalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.view.View;
@@ -104,6 +106,8 @@ public class floortile extends AppCompatActivity {
 
                     tile_txt.setText(total + "");
                     area_txt.setText(area + "");
+
+
                     if(cal_tile.l_total > cal_tile.w_total)
                     {
                         appx_tile.setText((Math.round(total) + cal_tile.l_total ) + "");
@@ -113,6 +117,13 @@ public class floortile extends AppCompatActivity {
                         appx_tile.setText((Math.round(total) + cal_tile.w_total ) + "");
                     }
 
+
+                    try {
+                        InputMethodManager imm = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
+                        imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+                    } catch (Exception e) {
+                        // TODO: handle exception
+                    }
 
                     area_txt1.setVisibility(TextView.VISIBLE);
                     area_txt2.setVisibility(TextView.VISIBLE);

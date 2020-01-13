@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -141,8 +142,12 @@ public class walltile extends AppCompatActivity {
                     }
 
 
-                    //sam1.setText(wall_cal_tile.l_total +"");
-                   // sam2.setText(wall_cal_tile.w_total +"");
+                    try {
+                        InputMethodManager imm = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
+                        imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+                    } catch (Exception e) {
+                        // TODO: handle exception
+                    }
                     area_txt1.setVisibility(TextView.VISIBLE);
                     area_txt2.setVisibility(TextView.VISIBLE);
                     tile_txt1.setVisibility(TextView.VISIBLE);
