@@ -118,6 +118,7 @@
             android:layout_width="222dp"
             android:layout_height="48dp"
             android:layout_gravity="center|center_horizontal"
+            android:background="@android:color/holo_orange_light"
             android:foregroundGravity="center|center_horizontal"
             android:gravity="center|center_horizontal"
             android:padding="5dip"
@@ -131,7 +132,9 @@
         android:id="@+id/cal_btn"
         android:layout_width="match_parent"
         android:layout_height="61dp"
-        android:text="CALCULATE" />
+        android:background="@android:color/holo_orange_light"
+        android:text="CALCULATE"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/sample2"
@@ -217,7 +220,7 @@
         <TextView
             android:id="@+id/declare"
             android:layout_width="295dp"
-            android:layout_height="63dp"
+            android:layout_height="wrap_content"
             android:text="With Damage And Cutting Tiles You Will Need "
             android:textColor="@android:color/background_dark"
             android:textSize="24sp" />
@@ -225,7 +228,7 @@
         <TextView
             android:id="@+id/appx_tile"
             android:layout_width="wrap_content"
-            android:layout_height="56dp"
+            android:layout_height="61dp"
             android:layout_weight="1"
             android:textColor="@android:color/background_dark"
             android:textSize="24sp"
