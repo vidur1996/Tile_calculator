@@ -67,8 +67,8 @@ public class cal_tile {
                 w_total = w_total+1;
             }
 
-             l_total = length_inch/12 ;
-            if(length_inch%12!=0)
+             l_total = length_inch/16 ;
+            if(length_inch%16!=0)
             {
                 l_total = l_total+1;
             }
