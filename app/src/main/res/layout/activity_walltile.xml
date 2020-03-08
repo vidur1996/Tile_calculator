@@ -177,7 +177,7 @@
     <TextView
         android:id="@+id/sample2"
         android:layout_width="match_parent"
-        android:layout_height="47dp"
+        android:layout_height="22dp"
         android:textSize="30sp" />
 
     <LinearLayout
@@ -278,14 +278,16 @@
             android:textStyle="bold" />
 
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/sample1"
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:typeface="sans" />
+        android:layout_height="124dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-8070039270535841/2129226669">
+
+    </com.google.android.gms.ads.AdView>
+
 
 </LinearLayout>

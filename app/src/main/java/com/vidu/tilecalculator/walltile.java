@@ -11,6 +11,12 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 public class walltile extends AppCompatActivity {
 
@@ -26,13 +32,23 @@ public class walltile extends AppCompatActivity {
     TextView  sam1;
     TextView sam2;
     int ori_val;
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_walltile);
 
-
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+        mAdView = findViewById(R.id.adView1);
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .build();
+        mAdView.loadAd(adRequest);
 
 
 
@@ -46,7 +62,7 @@ public class walltile extends AppCompatActivity {
         tile_txt1 = (TextView) findViewById(R.id.tile_txt);
         tile_txt2 = (TextView) findViewById(R.id.tile_txt2);
         declare = (TextView) findViewById(R.id.declare);
-            sam1 = (TextView) findViewById(R.id.sample1) ;
+
            sam2 = (TextView) findViewById(R.id.sample2) ;
         area_txt1.setVisibility(TextView.INVISIBLE);
         area_txt2.setVisibility(TextView.INVISIBLE);
