@@ -9,14 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".custom_tile"></activity>
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8070039270535841~6520183227" />
 
-                <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
-                <meta-data
-                    android:name="com.google.android.gms.ads.APPLICATION_ID"
-                    android:value="ca-app-pub-8070039270535841~6520183227"/>
-
-
-        <activity android:name=".walltile"></activity>
+        <activity android:name=".walltile" />
         <activity android:name=".floortile" />
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -40,7 +40,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="343dp"
+        android:layout_height="226dp"
         android:fadingEdge="horizontal|vertical"
 
         android:orientation="horizontal">
